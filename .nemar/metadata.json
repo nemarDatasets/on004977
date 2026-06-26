@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "CARLA: Adjusted common average referencing for cortico-cortical evoked potential data",
+  "description": "This dataset comprises intracranial EEG recordings from four patients undergoing single pulse electrical stimulation, designed to support research on adjusted common average referencing methods for cortico-cortical evoked potential analysis. The data were collected at Mayo Clinic as part of an NIH Brain Initiative project investigating processing speed in the human connectome. The dataset enables validation of the CARLA (Adjusted Common Average Referencing) methodology for improving signal quality in invasive electrophysiological recordings.",
+  "methods_description": "Intracranial EEG data were collected from resting patients during single pulse electrical stimulation delivered at approximately 0.2 Hz frequency. Stimulation parameters: 200 microsecond duration, biphasic waveform, 6 mA amplitude. Data formatted according to BIDS version 1.14.0.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -14,12 +16,27 @@
     "Kai J Miller": {},
     "Dora Hermes": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds004977.v1.2.0",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "intracranial EEG"
     },
+    {
+      "term": "cortico-cortical evoked potentials"
+    },
+    {
+      "term": "common average referencing"
+    },
+    {
+      "term": "electrical stimulation"
+    },
+    {
+      "term": "signal processing"
+    },
+    {
+      "term": "epilepsy"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "10.48550/arXiv.2310.00185",
       "identifier_type": "DOI",
@@ -39,6 +56,11 @@
       "identifier": "10.1016/j.jneumeth.2024.110153",
       "identifier_type": "DOI",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds004977.v1.2.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -64,12 +86,12 @@
       "award_title": "AES Predoctoral Research Fellowship"
     }
   ],
+  "resource_type_specific": "iEEG Dataset",
   "modalities": [
     "ieeg"
   ],
-  "resource_type_specific": "iEEG Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "1.6 GB (4442 files)"
   ],
   "formats": [
     ".annot",
@@ -81,38 +103,8 @@
     ".tidx",
     ".tmet",
     ".tsv",
-    ".txt"
+    ".txt",
+    ".yml"
   ],
-  "description": "This dataset contains intracranial EEG recordings from four patients undergoing single pulse electrical stimulation at the Mayo Clinic. The data support the development and validation of CARLA (Adjusted Common Average Referencing), a method for improving signal quality in cortico-cortical evoked potential recordings. The dataset enables reproducible analysis of neural responses to standardized stimulation protocols and facilitates investigation of processing speed across the human connectome. Note: Data for figures 7 and 8 are unavailable and have been censored with 0 values in this release.",
-  "methods_description": "Intracranial EEG recordings were collected from four patients at rest during single pulse electrical stimulation delivered at approximately 0.2 Hz. Stimulation parameters: 200 microsecond duration, biphasic waveform, 6 mA amplitude. Data are formatted according to BIDS version 1.14.0. Analysis code is available at https://github.com/hharveygit/CARLA_JNM.",
-  "keywords": [
-    {
-      "term": "intracranial EEG"
-    },
-    {
-      "term": "cortico-cortical evoked potentials"
-    },
-    {
-      "term": "common average referencing"
-    },
-    {
-      "term": "electrical stimulation"
-    },
-    {
-      "term": "signal processing"
-    },
-    {
-      "term": "neural recording"
-    },
-    {
-      "term": "epilepsy"
-    },
-    {
-      "term": "connectome"
-    },
-    {
-      "term": "BIDS"
-    }
-  ],
-  "source_hash": "909b89c3e0a3db960a528ae191025781a7f8fcd917d8e3c6c1d6b019d9a29fe9"
+  "source_hash": "0fd509b9af3598086173fdded59031f1f4913045e3d2e2c7870e0d33a95bb923"
 }
