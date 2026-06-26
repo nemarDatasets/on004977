@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on004977-blue)](https://doi.org/10.82901/nemar.on004977)
+
 # CARLA: Adjusted common average referencing for cortico-cortical evoked potential data
 
 This dataset contains intracranial EEG recordings from four patients during single pulse electrical stimulation as described in:
