@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "CARLA: Adjusted common average referencing for cortico-cortical evoked potential data",
-  "description": "This dataset comprises intracranial EEG recordings from four patients undergoing single pulse electrical stimulation, collected to develop and validate CARLA (Adjusted Common Average Referencing for cortico-cortical evoked potential data). The study addresses methodological challenges in reference electrode selection for intracranial recordings and provides raw data supporting the development of improved signal processing techniques for cortico-cortical evoked potentials.",
-  "methods_description": "Intracranial EEG data were collected from patients at rest during single pulse electrical stimulation delivered at approximately 0.2 Hz frequency. Stimulation parameters included 200 microsecond duration, biphasic waveform, and 6 mA amplitude. Data are formatted according to BIDS version 1.14.0.",
+  "description": "This dataset contains intracranial EEG recordings from four epilepsy patients undergoing single pulse electrical stimulation, collected to develop and validate CARLA, an adjusted common average referencing method for cortico-cortical evoked potential (CCEP) analysis. The data were recorded at Mayo Clinic and support methodological research on referencing schemes for intracranial stimulation-response data. This release includes raw data sufficient to reproduce most published results, with some data censored pending future publications.",
+  "methods_description": "Patients rested in a hospital bed while single pulse electrical stimulation was applied at a frequency of ~0.2 Hz. Each stimulation pulse was biphasic, lasted 200 microseconds, and had an amplitude of 6 mA. Intracranial EEG was recorded in response to the stimulation.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -18,22 +18,26 @@
   },
   "keywords": [
     {
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+    },
+    {
       "term": "intracranial EEG"
     },
     {
       "term": "cortico-cortical evoked potentials"
     },
     {
+      "term": "single pulse electrical stimulation"
+    },
+    {
       "term": "common average referencing"
     },
     {
-      "term": "signal processing"
-    },
-    {
-      "term": "electrical stimulation"
-    },
-    {
-      "term": "iEEG"
+      "term": "Epilepsy",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
     }
   ],
   "related_identifiers": [
@@ -71,12 +75,12 @@
       "funder_name": "T32 GM145408: Medical Scientist Training Program at Mayo Clinic"
     },
     {
-      "funder_name": "NIH",
+      "funder_name": "National Institute of Mental Health",
       "award_number": "R01MH122258",
       "award_title": "CRCNS: Processing speed in the human connectome across the lifespan"
     },
     {
-      "funder_name": "NIH",
+      "funder_name": "National Institute of General Medical Sciences",
       "award_number": "T32GM145408",
       "award_title": "Medical Scientist Training Program at Mayo Clinic"
     },
